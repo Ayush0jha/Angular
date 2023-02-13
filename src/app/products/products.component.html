@@ -1,0 +1,8 @@
+<h1>Poduct components</h1>
+<button class="btn btn-secondary" [disabled]="addProduct" (click)="onClick()">disabled button</button>
+<input type="text" class="form-control" (input)=(onUpdateProductName($event))/>
+<input type="text" class="form-control"[(ngModel)]="enteredvalue"/>
+
+
+<p>{{addProduct}}</p>
+<p>Status : {{greet}}</p>
